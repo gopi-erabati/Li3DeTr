@@ -1,6 +1,6 @@
 # Li3DeTr: A LiDAR based 3D Detection Transformer
 
-This is the official PyTorch implementation of the paper **Li3DeTr: A LiDAR based 3D Detection Transformer**, by Gopi Krishna Erabati and Helder Araujo at *IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023*.
+This is the official PyTorch implementation of the paper **[Li3DeTr: A LiDAR based 3D Detection Transformer](https://arxiv.org/abs/2210.15365)**, by Gopi Krishna Erabati and Helder Araujo at *IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023*.
 
 Our implementation is based on MMDetection3D.
 
