@@ -114,7 +114,6 @@ model = dict(
                             type='Li3DeTrCrossAttentionKitti',
                             pc_range=point_cloud_range,
                             num_points=1,
-                            num_levels_img=4,
                             num_levels_point=4,
                             embed_dims=256,
                             voxel_size=voxel_size,

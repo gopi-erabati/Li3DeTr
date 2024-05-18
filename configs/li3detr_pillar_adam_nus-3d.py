@@ -27,7 +27,7 @@ model = dict(
         max_num_points=20, voxel_size=voxel_size, max_voxels=(40000, 40000),
         point_cloud_range=point_cloud_range),
     pts_voxel_encoder=dict(
-        type='PillarFeatureNet',
+        type='PillarFeatureNetCustom',
         in_channels=5,
         feat_channels=[64],
         with_distance=False,
@@ -102,7 +102,6 @@ model = dict(
                             type='Li3DeTrCrossAttention',
                             pc_range=point_cloud_range,
                             num_points=1,
-                            num_levels_img=4,
                             num_levels_point=4,
                             embed_dims=256,
                             voxel_size=voxel_size,

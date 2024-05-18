@@ -15,5 +15,5 @@ from .models.utils.li3detr_transformer import (Li3DeTrTransformer,
                                                Li3DeTrCrossAttentionKitti)
 from .models.middle_encoders.sparse_encoder import SparseEncoderCustom
 from .models.backbones.second_custom import SECONDCustom
-from .models.voxel_encoders import DynamicVFECustom
+from .models.voxel_encoders import DynamicVFECustom, PillarFeatureNetCustom
 from .ops.norm import NaiveSyncBatchNorm1dCustom
