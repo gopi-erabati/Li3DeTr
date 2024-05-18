@@ -2,7 +2,12 @@
 
 This is the official PyTorch implementation of the paper **[Li3DeTr: A LiDAR based 3D Detection Transformer](https://openaccess.thecvf.com/content/WACV2023/papers/Erabati_Li3DeTr_A_LiDAR_Based_3D_Detection_Transformer_WACV_2023_paper.pdf)**, by Gopi Krishna Erabati and Helder Araujo in *IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2023*.
 
-Our implementation is based on MMDetection3D.
+**Contents**
+1. [Abstract](https://github.com/gopi-erabati/Li3DeTr#abstract)
+2. [Results](https://github.com/gopi-erabati/Li3DeTr#results)
+3. [Usage](https://github.com/gopi-erabati/Li3DeTr#usage)
+4. [Reference](https://github.com/gopi-erabati/Li3DeTr#reference)
+
 
 ## Abstract
 Inspired by recent advances in vision transformers for object detection, we propose Li3DeTr, an end-to-end LiDAR based 3D Detection Transformer for autonomous driving, that inputs LiDAR point clouds and regresses 3D bounding boxes. The LiDAR local and global features are encoded using sparse convolution and multi-scale deformable attention respectively. In the decoder head, firstly, in the novel Li3DeTr cross-attention block, we link the LiDAR global features to 3D predictions leveraging the sparse set of object queries learnt from the data. Secondly, the object query interactions are formulated using multi-head self-attention. Finally, the decoder layer is repeated L dec number of times to refine the object queries. Inspired by DETR, we employ set-to-set loss to train the Li3DeTr network. Without bells and whistles, the Li3DeTr network achieves 61.3% mAP and 67.6% NDS surpassing the state-of-the-art methods with non-maximum suppression (NMS) on the nuScenes dataset and it also achieves competitive performance on the KITTI dataset. We also employ knowledge distillation (KD) using a teacher and student model that slightly improves the performance of our network.
