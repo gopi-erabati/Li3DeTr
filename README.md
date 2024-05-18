@@ -52,9 +52,9 @@ cd Li3DeTr
 
 ### Training
 
-1. Download the [backbone pretrained weights]() to `ckpts/`
+1. Download the [backbone pretrained weights](https://drive.google.com/drive/folders/1Ie3RdWH0jPfHkwjU5VL3OXNWSJGK1EzY?usp=sharing) to `ckpts/`
 2. Add the present working directory to PYTHONPATH `export PYTHONPATH=$(pwd):$PYTHONPATH`
-3. To train the MSF3DDETR with ResNet101 and VoxelNet backbones on 2 GPUs, please run
+3. To train the Li3DeTr on 2 GPUs, please run
 
 `tools/dist_train.sh configs/li3detr_voxel_adam_nus-3d.py 2 --work-dir {WORK_DIR}`
 
